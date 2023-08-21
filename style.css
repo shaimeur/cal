@@ -3,3 +3,83 @@
     box-sizing: border-box;
     background-color: aliceblue;
 }
+
+.container{
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100dvh;
+    /* gap: 5px; */
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: repeat(6,50px);
+    grid-template-areas:
+    "display display display display"
+    "clear clear delete division"
+    "seven eight  nine multiplication"
+    "four five six substraction"
+    "one two three addition"
+    "zero zero zero equal";
+
+}
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: tomato;
+}
+
+.dis{
+    grid-area: display;
+}
+.cle{
+    grid-area: clear;
+}
+.del {
+    grid-area: delete;
+}
+.div {
+    grid-area: division;
+}
+.sev{
+    grid-area: seven;
+}
+.eig{
+    grid-area: eight;
+}
+.nin{
+    grid-area: nine;
+}
+.multi{
+    grid-area: multiplication;
+}
+.fou{
+    grid-area: four;
+}
+.fiv{
+    grid-area: five;
+}
+.si{
+    grid-area: six;
+}
+.sub{
+    grid-area: substraction;
+}
+.on1{
+    grid-area: one;
+}
+.t2{
+    grid-area: two;
+}
+.t3{
+    grid-area: three;
+}
+.add{
+    grid-area: addition;
+}
+.zer{
+    grid-area: zero;
+}
+.equ{
+    grid-area: equal;
+}
