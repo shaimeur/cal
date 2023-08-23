@@ -7,6 +7,7 @@
 .container{
     display: grid;
     height: 100dvh;
+    justify-content: center;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(6,100px);
     grid-template-areas:
@@ -16,9 +17,9 @@
     "four five six substraction"
     "one two three addition"
     "zero zero zero equal";
-    position: absolute;
+    /* position: absolute;
     top: 337px;
-    left: 767px;
+    left: 767px; */
 }
 .container div {
     display: flex;
@@ -35,8 +36,11 @@ div[type="button"]:hover {
         background-color: #f1faee;
         transition: 0.3s;
 }
-.display{
+#screen{
     background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
 }
 .division,.multiplication,.substraction,.addition,.equal{
     background-color: #df974c;
