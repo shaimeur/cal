@@ -1,5 +1,10 @@
 // the display screen
-const display = document.querySelector('.display');
+   const display = document.querySelector('.display');
+
+   // const display1 = document.getElementById("screen");
+   // const display = document.getElementsByClassName("display");
+   // const display2 = document.getElementsByTagName('div');
+
 
 // helper buttons
 const clear = document.querySelector('.clear');
@@ -25,7 +30,9 @@ const seven = document.querySelector('.seven');
 const eight = document.querySelector('.eight');
 const nine = document.querySelector('.nine');
 
-
+function catchDisplayValue(){
+   console.log(display.innerHTML)
+}
 
 
 
@@ -80,4 +87,24 @@ nine.addEventListener("click",function (event){
    // console.log(event.target.innerHTML)
    let resultOfNine = event.target.innerHTML
    return display.append(resultOfNine)
+})
+
+clear.addEventListener("click",function(){
+      catchDisplayValue()
+     return  display.innerText = ''
+})
+
+del.addEventListener("click",function(){
+   console.log(display.innerHTML)
+   // console.log(typeof display.innerHTML)
+   let putedVal =  display.innerHTML.split('')
+   console.log('input',putedVal)
+   // console.log(putedVal.at(-1))
+   putedVal.pop()
+   let r =  putedVal.join('')
+   console.log(typeof r)
+   console.log("after the traitement", r)
+     display.innerHTML = r
+   console.log('result',r)
+
 })

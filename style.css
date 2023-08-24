@@ -41,6 +41,10 @@ div[type="button"]:hover {
     color: white;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
+    /* flex-wrap: wrap;
+    height: auto;
+    flex-grow: inherit; */
 }
 .division,.multiplication,.substraction,.addition,.equal{
     background-color: #df974c;
