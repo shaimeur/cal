@@ -40,10 +40,11 @@ function calculate(x,op,y){
   } else if (op === '×') {
       return x * y ;
   } else if(op === '÷'){
-      if(y === 0){
-         return console.log('not possible')
+      if(y == 0){
+         return "WE CAN'T DIVIDE BY 0"
+      }else{
+         return x / y
       }
-      return x / y
   }
 }
 
